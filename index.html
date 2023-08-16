@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/4035682334.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <main>
+        <section class="max-w-5xl mx-auto bg-emerald-200 h-96 mt-40 rounded ">
+            <h1 class="text-center text-xl text-black font-bold pt-4">My Text Editor</h1>
+            <div class="bg-teal-100 border-black border-4 h-80 w-11/12 mt-2 ml-10 mb-2 rounded-xl ">
+                <div class="border-b-4 border-black flex  ml-5 mr-5">
+                    <div class="p-3 text-xl items-center ml-6 justify-start">
+                        <button id="btn-bold"><i class="fa-solid fa-bold pr-4 text-center"></i></button>
+                        <button id="btn-italic"><i class="fa-solid fa-italic pr-4"></i></button>
+                        <button id="btn-underline"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div class="p-3 text-xl ml-56 mr-48 items-center justify-center">
+                        <button id="btn-left"><i class="fa-solid fa-align-left pr-4"></i></button>
+                        <button id="btn-right"><i class="fa-solid fa-align-right pr-4"></i></button>
+                        <button id="btn-center"><i class="fa-solid fa-align-center pr-4"></i></button>
+                        <button id="btn-justify"><i class="fa-solid fa-align-justify"></i></button>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="items-center p-3 flex">
+                            <input class="bg-teal-100 border-2 border-black rounded-md w-12" type="number" name="" id="font-input">
+                        </div>
+                        <div class="p-3 mr-3">
+                            <input type="color" name="" id="color-input">
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex justify-center items-end pt-2">
+                    <textarea class="" name="" id="text-input" cols="117" rows="10"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
